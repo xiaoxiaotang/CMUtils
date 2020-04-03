@@ -1,0 +1,22 @@
+{
+  "name": "CMUtils",
+  "version": "0.1.0",
+  "summary": "A short description of CMUtils.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/xiaozhan/CMUtils",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xiaozhan": "Yu.Wang@zhan.com"
+  },
+  "source": {
+    "git": "https://github.com/xiaozhan/CMUtils.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CMUtils/Classes/**/*"
+}

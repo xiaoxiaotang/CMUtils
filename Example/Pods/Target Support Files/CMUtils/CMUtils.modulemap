@@ -1,0 +1,6 @@
+framework module CMUtils {
+  umbrella header "CMUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}

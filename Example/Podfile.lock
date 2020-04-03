@@ -1,0 +1,16 @@
+PODS:
+  - CMUtils (0.1.0)
+
+DEPENDENCIES:
+  - CMUtils (from `../`)
+
+EXTERNAL SOURCES:
+  CMUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CMUtils: 5c91f43b0e2755cac307296243dd5ac52808db61
+
+PODFILE CHECKSUM: b40997e52416e040ae6ff19bc616c51fa1e04245
+
+COCOAPODS: 1.9.1
