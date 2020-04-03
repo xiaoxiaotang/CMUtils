@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CMUtils'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CMUtils.'
+  s.summary          = '基础组件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -60,6 +60,7 @@ TODO: Add long description of the pod here.
   end
   s.subspec 'Security' do |ss|
     ss.source_files = 'CMUtils/Classes/Security/*.{h,m}'
+    ss.dependency 'CMUtils/NSString'
   end
   s.subspec 'Storage' do |ss|
     ss.source_files = 'CMUtils/Classes/Storage/*.{h,m}'
