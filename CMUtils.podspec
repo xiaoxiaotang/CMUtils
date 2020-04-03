@@ -21,16 +21,56 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/xiaozhan/CMUtils'
+  s.homepage         = 'http://134.175.230.26:9090/iOS_Compoent/CMUtils.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'xiaozhan' => 'Yu.Wang@zhan.com' }
-  s.source           = { :git => 'https://github.com/xiaozhan/CMUtils.git', :tag => s.version.to_s }
+  s.source           = { :git => 'http://134.175.230.26:9090/iOS_Compoent/CMUtils.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'CMUtils/Classes/**/*'
+  
+  s.subspec 'Hook' do |ss|
+      ss.source_files = 'CMUtils/Classes/Hook/*.{h,m}'
+  end
+  s.subspec 'DateUtil' do |ss|
+      ss.source_files = 'CMUtils/Classes/DateUtil/*.{h,m}'
+  end
+  s.subspec 'Device' do |ss|
+      ss.source_files = 'CMUtils/Classes/Device/*.{h,m}'
+  end
+  s.subspec 'JsonHelper' do |ss|
+    ss.source_files = 'CMUtils/Classes/JsonHelper/*.{h,m}'
+  end
+  s.subspec 'NSException' do |ss|
+    ss.source_files = 'CMUtils/Classes/NSException/*.{h,m}'
+  end
+  s.subspec 'NSNumber' do |ss|
+    ss.source_files = 'CMUtils/Classes/NSNumber/*.{h,m}'
+  end
+  s.subspec 'NSString' do |ss|
+    ss.source_files = 'CMUtils/Classes/NSString/*.{h,m}'
+    ss.frameworks = 'UIKit'
+  end
+  s.subspec 'RouterEvent' do |ss|
+    ss.source_files = 'CMUtils/Classes/RouterEvent/*.{h,m}'
+    ss.frameworks = 'UIKit'
+  end
+  s.subspec 'Security' do |ss|
+    ss.source_files = 'CMUtils/Classes/Security/*.{h,m}'
+  end
+  s.subspec 'Storage' do |ss|
+    ss.source_files = 'CMUtils/Classes/Storage/*.{h,m}'
+  end
+  s.subspec 'Timer' do |ss|
+      ss.source_files = 'CMUtils/Classes/Timer/*.{h,m}'
+  end
+  s.subspec 'Privacy' do |ss|
+      ss.source_files = 'CMUtils/Classes/Privacy/*.{h,m}'
+      ss.frameworks = 'UIKit','AVFoundation','Photos','CoreLocation','NotificationCenter','UserNotifications'
+  end
   
   # s.resource_bundles = {
   #   'CMUtils' => ['CMUtils/Assets/*.png']

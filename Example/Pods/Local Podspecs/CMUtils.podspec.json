@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of CMUtils.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/xiaozhan/CMUtils",
+  "homepage": "http://134.175.230.26:9090/iOS_Compoent/CMUtils.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,71 @@
     "xiaozhan": "Yu.Wang@zhan.com"
   },
   "source": {
-    "git": "https://github.com/xiaozhan/CMUtils.git",
+    "git": "http://134.175.230.26:9090/iOS_Compoent/CMUtils.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "CMUtils/Classes/**/*"
+  "source_files": "CMUtils/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "Hook",
+      "source_files": "CMUtils/Classes/Hook/*.{h,m}"
+    },
+    {
+      "name": "DateUtil",
+      "source_files": "CMUtils/Classes/DateUtil/*.{h,m}"
+    },
+    {
+      "name": "Device",
+      "source_files": "CMUtils/Classes/Device/*.{h,m}"
+    },
+    {
+      "name": "JsonHelper",
+      "source_files": "CMUtils/Classes/JsonHelper/*.{h,m}"
+    },
+    {
+      "name": "NSException",
+      "source_files": "CMUtils/Classes/NSException/*.{h,m}"
+    },
+    {
+      "name": "NSNumber",
+      "source_files": "CMUtils/Classes/NSNumber/*.{h,m}"
+    },
+    {
+      "name": "NSString",
+      "source_files": "CMUtils/Classes/NSString/*.{h,m}",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "RouterEvent",
+      "source_files": "CMUtils/Classes/RouterEvent/*.{h,m}",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "Security",
+      "source_files": "CMUtils/Classes/Security/*.{h,m}"
+    },
+    {
+      "name": "Storage",
+      "source_files": "CMUtils/Classes/Storage/*.{h,m}"
+    },
+    {
+      "name": "Timer",
+      "source_files": "CMUtils/Classes/Timer/*.{h,m}"
+    },
+    {
+      "name": "Privacy",
+      "source_files": "CMUtils/Classes/Privacy/*.{h,m}",
+      "frameworks": [
+        "UIKit",
+        "AVFoundation",
+        "Photos",
+        "CoreLocation",
+        "NotificationCenter",
+        "UserNotifications"
+      ]
+    }
+  ]
 }

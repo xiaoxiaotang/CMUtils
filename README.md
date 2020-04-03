@@ -1,29 +1,38 @@
-# CMUtils
+Saic-Utils-FrameWork
+====================
 
-[![CI Status](https://img.shields.io/travis/xiaozhan/CMUtils.svg?style=flat)](https://travis-ci.org/xiaozhan/CMUtils)
-[![Version](https://img.shields.io/cocoapods/v/CMUtils.svg?style=flat)](https://cocoapods.org/pods/CMUtils)
-[![License](https://img.shields.io/cocoapods/l/CMUtils.svg?style=flat)](https://cocoapods.org/pods/CMUtils)
-[![Platform](https://img.shields.io/cocoapods/p/CMUtils.svg?style=flat)](https://cocoapods.org/pods/CMUtils)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-CMUtils is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### Howto
+* Podfile 添加源
 
 ```ruby
-pod 'CMUtils'
+source 'http://134.175.230.26:9090/iOS_Compoent/PrivatePodSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 ```
 
-## Author
+* 安装
 
-xiaozhan, Yu.Wang@zhan.com
+```ruby
+pod 'SCUtils'
+```
 
-## License
+* 使用subspec
 
-CMUtils is available under the MIT license. See the LICENSE file for more info.
+```
+pod 'SCUtils/NSString'
+```
+
+### Usage
+```objc
+#import "SCUtils.h"
+```
+
+### 常见功能
+
+- 常量定义
+- 时间格式转换
+- 设备信息获取
+- JSON 数据转换
+- 异常堆栈获取
+- 科学计数四则运算
+- 字符串的常见处理
+- 响应事件拦截
