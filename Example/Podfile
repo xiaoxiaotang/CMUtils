@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'CMUtils_Example' do
+  pod 'CMUtils', :path => '../'
+
+  target 'CMUtils_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
