@@ -1,19 +1,23 @@
 //
 //  UIResponder+RouterEvent.h
-//  SaicCarPlatform
+//  CMUtils
 //
-//  Created by 杨艳东 on 2018/4/29.
-//  Copyright © 2018年 Saic. All rights reserved.
+//  Created by 小站 on 2020/4/8.
 //
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UIResponder (RouterEvent)
+
 /**
  @brief 借用responder chain传递事件
  @param eventName  事件名称
  @param userInfo   参数信息
  */
-- (void)sc_routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo;
+- (void)zx_routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo;
 
 @end
+
+NS_ASSUME_NONNULL_END

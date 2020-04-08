@@ -1,17 +1,16 @@
 //
 //  UIResponder+RouterEvent.m
-//  SaicCarPlatform
+//  CMUtils
 //
-//  Created by 杨艳东 on 2018/4/29.
-//  Copyright © 2018年 Saic. All rights reserved.
+//  Created by 小站 on 2020/4/8.
 //
 
 #import "UIResponder+RouterEvent.h"
 
 @implementation UIResponder (RouterEvent)
 
--(void)sc_routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo {
-    [[self nextResponder] sc_routerEventWithName:eventName userInfo:userInfo];
+-(void)zx_routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo {
+    [[self nextResponder] zx_routerEventWithName:eventName userInfo:userInfo];
 }
 
 @end

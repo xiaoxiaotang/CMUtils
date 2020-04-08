@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "XZConstant.h"
 #import "UIResponder+RouterEvent.h"
 #import "UIImage+bundle.h"
 

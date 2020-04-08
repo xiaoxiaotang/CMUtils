@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (bundle)
 
++ (UIImage *)xz_imageNamed:(NSString *)imageName;
+
 + (UIImage *)xz_imageNamed:(NSString *)imageName bundleName:(NSString *)bundleName;
 
 @end
