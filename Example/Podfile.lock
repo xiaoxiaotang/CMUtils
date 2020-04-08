@@ -1,29 +1,9 @@
 PODS:
-  - CMUtils (0.1.0):
-    - CMUtils/DateUtil (= 0.1.0)
-    - CMUtils/Device (= 0.1.0)
-    - CMUtils/Hook (= 0.1.0)
-    - CMUtils/JsonHelper (= 0.1.0)
-    - CMUtils/NSException (= 0.1.0)
-    - CMUtils/NSNumber (= 0.1.0)
-    - CMUtils/NSString (= 0.1.0)
-    - CMUtils/Privacy (= 0.1.0)
-    - CMUtils/RouterEvent (= 0.1.0)
-    - CMUtils/Security (= 0.1.0)
-    - CMUtils/Storage (= 0.1.0)
-    - CMUtils/Timer (= 0.1.0)
-  - CMUtils/DateUtil (0.1.0)
-  - CMUtils/Device (0.1.0)
-  - CMUtils/Hook (0.1.0)
-  - CMUtils/JsonHelper (0.1.0)
-  - CMUtils/NSException (0.1.0)
-  - CMUtils/NSNumber (0.1.0)
-  - CMUtils/NSString (0.1.0)
-  - CMUtils/Privacy (0.1.0)
-  - CMUtils/RouterEvent (0.1.0)
-  - CMUtils/Security (0.1.0)
-  - CMUtils/Storage (0.1.0)
-  - CMUtils/Timer (0.1.0)
+  - CMUtils (0.2.0):
+    - CMUtils/RouterEvent (= 0.2.0)
+    - CMUtils/UIImage (= 0.2.0)
+  - CMUtils/RouterEvent (0.2.0)
+  - CMUtils/UIImage (0.2.0)
 
 DEPENDENCIES:
   - CMUtils (from `../`)
@@ -33,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CMUtils: 7a148420ea7cb1ed84dff0397541f5189695f8e5
+  CMUtils: 8abb6cffc3516bf4dd36ce6dbc02fb4c3a2ed271
 
 PODFILE CHECKSUM: fcc1ae4180817850cf5c21cc76128035c5f35627
 

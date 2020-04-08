@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CMUtils'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = '基础组件'
 
 # This description is used to generate tags and improve search results.
@@ -32,45 +32,11 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'CMUtils/Classes/*.{h,m}'
   
-  s.subspec 'Hook' do |ss|
-      ss.source_files = 'CMUtils/Classes/Hook/*.{h,m}'
-  end
-  s.subspec 'DateUtil' do |ss|
-      ss.source_files = 'CMUtils/Classes/DateUtil/*.{h,m}'
-  end
-  s.subspec 'Device' do |ss|
-      ss.source_files = 'CMUtils/Classes/Device/*.{h,m}'
-  end
-  s.subspec 'JsonHelper' do |ss|
-    ss.source_files = 'CMUtils/Classes/JsonHelper/*.{h,m}'
-  end
-  s.subspec 'NSException' do |ss|
-    ss.source_files = 'CMUtils/Classes/NSException/*.{h,m}'
-  end
-  s.subspec 'NSNumber' do |ss|
-    ss.source_files = 'CMUtils/Classes/NSNumber/*.{h,m}'
-  end
-  s.subspec 'NSString' do |ss|
-    ss.source_files = 'CMUtils/Classes/NSString/*.{h,m}'
-    ss.frameworks = 'UIKit'
-  end
   s.subspec 'RouterEvent' do |ss|
-    ss.source_files = 'CMUtils/Classes/RouterEvent/*.{h,m}'
-    ss.frameworks = 'UIKit'
+      ss.source_files = 'CMUtils/Classes/RouterEvent/*.{h,m}'
   end
-  s.subspec 'Security' do |ss|
-    ss.source_files = 'CMUtils/Classes/Security/*.{h,m}'
-    ss.dependency 'CMUtils/NSString'
-  end
-  s.subspec 'Storage' do |ss|
-    ss.source_files = 'CMUtils/Classes/Storage/*.{h,m}'
-  end
-  s.subspec 'Timer' do |ss|
-      ss.source_files = 'CMUtils/Classes/Timer/*.{h,m}'
-  end
-  s.subspec 'Privacy' do |ss|
-      ss.source_files = 'CMUtils/Classes/Privacy/*.{h,m}'
-      ss.frameworks = 'UIKit','AVFoundation','Photos','CoreLocation','NotificationCenter','UserNotifications'
+  s.subspec 'UIImage' do |ss|
+      ss.source_files = 'CMUtils/Classes/UIImage/*.{h,m}'
   end
   
   # s.resource_bundles = {
