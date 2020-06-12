@@ -36,3 +36,5 @@ pod 'SCUtils/NSString'
 - 科学计数四则运算
 - 字符串的常见处理
 - 响应事件拦截
+
+pod repo push 230-privatepodspecs CMUtils.podspec --allow-warnings --verbose --use-libraries
