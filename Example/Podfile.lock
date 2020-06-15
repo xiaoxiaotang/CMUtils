@@ -1,13 +1,15 @@
 PODS:
-  - CMUtils (0.6.0):
-    - CMUtils/NSString (= 0.6.0)
-    - CMUtils/RouterEvent (= 0.6.0)
-    - CMUtils/UIColor (= 0.6.0)
-    - CMUtils/UIImage (= 0.6.0)
-  - CMUtils/NSString (0.6.0)
-  - CMUtils/RouterEvent (0.6.0)
-  - CMUtils/UIColor (0.6.0)
-  - CMUtils/UIImage (0.6.0)
+  - CMUtils (0.8.0):
+    - CMUtils/NSString (= 0.8.0)
+    - CMUtils/RouterEvent (= 0.8.0)
+    - CMUtils/UIColor (= 0.8.0)
+    - CMUtils/UIFont (= 0.8.0)
+    - CMUtils/UIImage (= 0.8.0)
+  - CMUtils/NSString (0.8.0)
+  - CMUtils/RouterEvent (0.8.0)
+  - CMUtils/UIColor (0.8.0)
+  - CMUtils/UIFont (0.8.0)
+  - CMUtils/UIImage (0.8.0)
 
 DEPENDENCIES:
   - CMUtils (from `../`)
@@ -17,7 +19,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CMUtils: 399b9364bb5e4ed4feefeebc138e9966afedcf68
+  CMUtils: 67c3070b11e418dfa3bcfd8b8e68262a5135b71a
 
 PODFILE CHECKSUM: fcc1ae4180817850cf5c21cc76128035c5f35627
 

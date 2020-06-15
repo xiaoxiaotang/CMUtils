@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CMUtils'
-  s.version          = '0.7.0'
+  s.version          = '0.8.0'
   s.summary          = '基础组件'
 
 # This description is used to generate tags and improve search results.
@@ -43,6 +43,9 @@ TODO: Add long description of the pod here.
   end
   s.subspec 'NSString' do |ss|
       ss.source_files = 'CMUtils/Classes/NSString/*.{h,m}'
+  end
+  s.subspec 'UIFont' do |ss|
+      ss.source_files = 'CMUtils/Classes/UIFont/*.{h,m}'
   end
   
   # s.resource_bundles = {

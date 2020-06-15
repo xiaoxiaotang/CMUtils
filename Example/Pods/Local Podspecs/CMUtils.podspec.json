@@ -1,6 +1,6 @@
 {
   "name": "CMUtils",
-  "version": "0.6.0",
+  "version": "0.8.0",
   "summary": "基础组件",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "http://134.175.230.26:9090/iOS_Compoent/CMUtils.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "http://134.175.230.26:9090/iOS_Compoent/CMUtils.git",
-    "tag": "0.6.0"
+    "tag": "0.8.0"
   },
   "platforms": {
     "ios": "9.0"
@@ -35,6 +35,10 @@
     {
       "name": "NSString",
       "source_files": "CMUtils/Classes/NSString/*.{h,m}"
+    },
+    {
+      "name": "UIFont",
+      "source_files": "CMUtils/Classes/UIFont/*.{h,m}"
     }
   ]
 }

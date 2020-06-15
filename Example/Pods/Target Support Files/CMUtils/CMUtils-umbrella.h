@@ -16,6 +16,7 @@
 #import "NSString+SCExt.h"
 #import "UIResponder+RouterEvent.h"
 #import "UIColor+Hex.h"
+#import "UIFont+XZTool.h"
 #import "UIImage+bundle.h"
 
 FOUNDATION_EXPORT double CMUtilsVersionNumber;
