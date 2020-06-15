@@ -7,11 +7,11 @@
 //
 
 @import UIKit;
-#import "XZAppDelegate.h"
+#import "WYAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([XZAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([WYAppDelegate class]));
     }
 }

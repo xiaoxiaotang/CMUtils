@@ -1,18 +1,18 @@
 //
-//  XZViewController.m
+//  WYViewController.m
 //  CMUtils
 //
 //  Created by xiaozhan on 04/03/2020.
 //  Copyright (c) 2020 xiaozhan. All rights reserved.
 //
 
-#import "XZViewController.h"
+#import "WYViewController.h"
 
-@interface XZViewController ()
+@interface WYViewController ()
 
 @end
 
-@implementation XZViewController
+@implementation WYViewController
 
 - (void)viewDidLoad
 {

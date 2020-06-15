@@ -1,5 +1,5 @@
 //
-//  XZAppDelegate.h
+//  WYViewController.h
 //  CMUtils
 //
 //  Created by xiaozhan on 04/03/2020.
@@ -8,8 +8,6 @@
 
 @import UIKit;
 
-@interface XZAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface WYViewController : UIViewController
 
 @end

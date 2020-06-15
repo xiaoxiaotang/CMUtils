@@ -9,7 +9,7 @@
 
 @implementation UIImage (bundle)
 
-+ (UIImage *)xz_imageNamed:(NSString *)imageName {
++ (UIImage *)wy_imageNamed:(NSString *)imageName {
     NSArray *symbols = [NSThread callStackSymbols];
     
     if (symbols.count > 1) {
@@ -28,7 +28,7 @@
 }
 
 
-+ (UIImage *)xz_imageNamed:(NSString *)imageName  bundleName:(NSString *)bundleName {
++ (UIImage *)wy_imageNamed:(NSString *)imageName  bundleName:(NSString *)bundleName {
     NSString *currentBundleStr = [[NSBundle mainBundle].bundlePath stringByAppendingPathComponent:bundleName];
     return [UIImage imageNamed:imageName inBundle:[NSBundle bundleWithPath:currentBundleStr]?:[NSBundle mainBundle] compatibleWithTraitCollection:nil];
 }

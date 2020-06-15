@@ -1,9 +1,8 @@
 //
-//  NSString+SCExt.h
-//  SaicUtilsDemo
+//  NSString+WYExt.h
+//  CMUtils
 //
-//  Created by zhenglaixian on 2018/9/6.
-//  Copyright © 2018年 saic. All rights reserved.
+//  Created by 小站 on 2020/6/15.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,10 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- Provide hash, encrypt, encode and some common method for 'NSString'.
- */
-@interface NSString (SCExt)
+@interface NSString (WYExt)
 
 #pragma mark - Hash
 ///=============================================================================
@@ -23,18 +19,18 @@ NS_ASSUME_NONNULL_BEGIN
 /**
     md5加密
 */
-- (NSString *)sc_md5Mod32;
+- (NSString *)wy_md5Mod32;
 /// base64
-- (NSString *)sc_base64String;
+- (NSString *)wy_base64String;
 /// SHA1
-- (NSString*)sc_SHA1;
+- (NSString*)wy_SHA1;
 /// SHA256
-- (NSString*)sc_SHA256;
+- (NSString*)wy_SHA256;
 
 /****** 加密 ******/
-+ (NSString *)sc_encryptUseDES:(NSString *)clearText key:(NSString *)key;
++ (NSString *)wy_encryptUseDES:(NSString *)clearText key:(NSString *)key;
 /****** 解密 ******/
-+ (NSString *)sc_decryptUseDESWithTextData:(NSData *)textData key:(NSString *)key;
++ (NSString *)wy_decryptUseDESWithTextData:(NSData *)textData key:(NSString *)key;
 
 /// 十六进制转换为十进制字符串
 - (NSString *)formatFromHexString;
@@ -46,52 +42,52 @@ NS_ASSUME_NONNULL_BEGIN
 /// @name Verify
 ///=============================================================================
 
-- (BOOL)sc_notEmpty;
-+ (BOOL)sc_notEmpty:(NSString *)string;
+- (BOOL)wy_notEmpty;
++ (BOOL)wy_notEmpty:(NSString *)string;
 #pragma mark - Regular Expression
 ///=============================================================================
 /// @name Regular Expression
 ///=============================================================================
 
 /// url
-- (BOOL)sc_isValidUrl;
+- (BOOL)wy_isValidUrl;
 /// 手机号码
-- (BOOL)sc_isValidPhoneNumber;
+- (BOOL)wy_isValidPhoneNumber;
 /// 固话号码
-- (BOOL)sc_isValidTelNumber;
+- (BOOL)wy_isValidTelNumber;
 /// 身份证号码
-- (BOOL)sc_isValidIDCardNumber;
+- (BOOL)wy_isValidIDCardNumber;
 /**
  身份证号码的精确检验
 
  @param value 身份证号
  @return 正则验证成功返回YES, 否则返回NO
  */
-+ (BOOL)sc_accurateVerifyIDCardNumber:(NSString *)value;
++ (BOOL)wy_accurateVerifyIDCardNumber:(NSString *)value;
 /// 银行卡的有效性
-- (BOOL)sc_bankCardluhmCheck;
+- (BOOL)wy_bankCardluhmCheck;
 /// 车牌号
-- (BOOL)sc_isCarNumber;
+- (BOOL)wy_isCarNumber;
 /// 邮政编码
-- (BOOL)sc_isValidPostalcode;
+- (BOOL)wy_isValidPostalcode;
 /// 工商税号
-- (BOOL)sc_isValidTaxNo;
+- (BOOL)wy_isValidTaxNo;
 
 /// ip地址
-- (BOOL)sc_isIPAddress;
+- (BOOL)wy_isIPAddress;
 /// mac地址
-- (BOOL)sc_isMacAddress;
+- (BOOL)wy_isMacAddress;
 
 /// Email
-- (BOOL)sc_isValidEmail;
+- (BOOL)wy_isValidEmail;
 /// 密码(以字母开头，长度在6~18之间，只能包含字母、数字和下划线)
-- (BOOL)sc_isValidPassword;
+- (BOOL)wy_isValidPassword;
 /// 验证码(6位纯数字)
-- (BOOL)sc_isValidCode;
+- (BOOL)wy_isValidCode;
 /// 是否包含emoji表情
-- (BOOL)sc_isContainsEmoji;
+- (BOOL)wy_isContainsEmoji;
 /// 纯汉字
-- (BOOL)sc_isPureChinese;
+- (BOOL)wy_isPureChinese;
 
 /**
  是否符合最小长度、最长长度，是否包含中文,数字，字母，其他字符，首字母是否可以为数字
@@ -105,7 +101,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param firstCannotBeDigtal 首字母是否可为数字
  @return 正则验证成功返回YES, 否则返回NO
  */
-- (BOOL)sc_isValidWithMinLenth:(NSInteger)minLenth
+- (BOOL)wy_isValidWithMinLenth:(NSInteger)minLenth
                       maxLenth:(NSInteger)maxLenth
                 containChinese:(BOOL)containChinese
                  containDigtal:(BOOL)containDigtal
@@ -118,13 +114,13 @@ NS_ASSUME_NONNULL_BEGIN
 ///=============================================================================
 
 //判断字符串是否是整型
-- (BOOL)sc_isPureInt;
+- (BOOL)wy_isPureInt;
 //判断是否为浮点型
-- (BOOL)sc_isPureFloat;
+- (BOOL)wy_isPureFloat;
 //判断是否为双精度类型
-- (BOOL)sc_isPureDouble;
+- (BOOL)wy_isPureDouble;
 //判断是否为纯数字
-- (BOOL)sc_isPureNumCharacters;
+- (BOOL)wy_isPureNumCharacters;
 
 #pragma mark - NSDate Compatible
 ///=============================================================================
@@ -137,7 +133,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param urlString url地址
  @return url地址中的参数
  */
-+ (NSDictionary *)sc_formatURLParamsWithURLString:(NSString *)urlString;
++ (NSDictionary *)wy_formatURLParamsWithURLString:(NSString *)urlString;
 
 #pragma mark - Path
 ///=============================================================================
@@ -149,35 +145,35 @@ NS_ASSUME_NONNULL_BEGIN
 *
 *  @return Documents文件的路径
 */
-+ (NSString *)sc_pathForDocuments;
++ (NSString *)wy_pathForDocuments;
 
 /**
 *  快速返回沙盒中，Library下Caches文件的路径
 *
 *  @return 快速返回沙盒中Library下Caches文件的路径
 */
-+ (NSString *)sc_pathForCaches;
++ (NSString *)wy_pathForCaches;
 
 /**
 *  快速返回沙盒中，MainBundle(资源捆绑包的)的路径
 *
 *  @return 快速返回MainBundle(资源捆绑包的)的路径
 */
-+ (NSString *)sc_pathForMainBundle;
++ (NSString *)wy_pathForMainBundle;
 
 /**
  *  快速返回沙盒中，tmp(临时文件)文件的路径
  *
  *  @return 快速返回沙盒中tmp文件的路径
  */
-+ (NSString *)sc_pathForTemp;
++ (NSString *)wy_pathForTemp;
 
 /**
  *  快速返回沙盒中，Library下Preferences文件的路径
  *
  *  @return 快速返回沙盒中Library下Caches文件的路径
  */
-+ (NSString *)sc_pathForPreferences;
++ (NSString *)wy_pathForPreferences;
 
 /**
  *  快速返回沙盒中，你指定的系统文件的路径。tmp文件除外，tmp用系统的NSTemporaryDirectory()函数更加便捷
@@ -186,7 +182,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 快速你指定的系统文件的路径
  */
-+ (NSString *)sc_pathForSystemFile:(NSSearchPathDirectory)directory;
++ (NSString *)wy_pathForSystemFile:(NSSearchPathDirectory)directory;
 
 #pragma mark - Font
 ///=============================================================================
@@ -201,7 +197,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 快速计算出文本的真实尺寸
  */
-- (CGSize)sc_sizeWithFont:(UIFont *)font andMaxSize:(CGSize)maxSize;
+- (CGSize)wy_sizeWithFont:(UIFont *)font andMaxSize:(CGSize)maxSize;
 
 /**
  计算文字的高度
@@ -210,7 +206,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param width 约束宽度
  @return 文字的高度
  */
-- (CGFloat)sc_heightWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width;
+- (CGFloat)wy_heightWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width;
 /**
  计算文字的宽度
 
@@ -218,7 +214,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param height 约束高度
  @return 文字的宽度
  */
-- (CGFloat)sc_widthWithFont:(UIFont *)font constrainedToHeight:(CGFloat)height;
+- (CGFloat)wy_widthWithFont:(UIFont *)font constrainedToHeight:(CGFloat)height;
 
 #pragma mark - Other
 ///=============================================================================
@@ -228,13 +224,13 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief IM 历史聊天显示时间格式处理
  * @param timestamp 时间戳
  */
-+(NSString *)sc_imTime:(NSString *)timestamp;
++(NSString *)wy_imTime:(NSString *)timestamp;
 
 /**
  * @brief 历史显示时间格式处理
  * @param time 入参数时间暂时必须未：yyyy-MM-dd HH:mm
  */
-+(NSString *)sc_processingTime:(NSString *)time;
++(NSString *)wy_processingTime:(NSString *)time;
 
 
 /**
@@ -242,8 +238,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return 反转后字符串
  */
-- (NSString *)sc_reverseString;
+- (NSString *)wy_reverseString;
 @end
-
 
 NS_ASSUME_NONNULL_END

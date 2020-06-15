@@ -1,14 +1,14 @@
 //
-//  XZAppDelegate.m
+//  WYAppDelegate.m
 //  CMUtils
 //
 //  Created by xiaozhan on 04/03/2020.
 //  Copyright (c) 2020 xiaozhan. All rights reserved.
 //
 
-#import "XZAppDelegate.h"
+#import "WYAppDelegate.h"
 
-@implementation XZAppDelegate
+@implementation WYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

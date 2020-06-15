@@ -1,6 +1,6 @@
 {
   "name": "CMUtils",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "summary": "基础组件",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "http://134.175.230.26:9090/iOS_Compoent/CMUtils.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "http://134.175.230.26:9090/iOS_Compoent/CMUtils.git",
-    "tag": "0.8.0"
+    "tag": "0.9.0"
   },
   "platforms": {
     "ios": "9.0"
@@ -21,8 +21,8 @@
   "source_files": "CMUtils/Classes/*.{h,m}",
   "subspecs": [
     {
-      "name": "RouterEvent",
-      "source_files": "CMUtils/Classes/RouterEvent/*.{h,m}"
+      "name": "UIResponder",
+      "source_files": "CMUtils/Classes/UIResponder/*.{h,m}"
     },
     {
       "name": "UIImage",

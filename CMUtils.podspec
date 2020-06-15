@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CMUtils'
-  s.version          = '0.8.0'
+  s.version          = '0.9.0'
   s.summary          = '基础组件'
 
 # This description is used to generate tags and improve search results.
@@ -32,8 +32,8 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'CMUtils/Classes/*.{h,m}'
   
-  s.subspec 'RouterEvent' do |ss|
-      ss.source_files = 'CMUtils/Classes/RouterEvent/*.{h,m}'
+  s.subspec 'UIResponder' do |ss|
+      ss.source_files = 'CMUtils/Classes/UIResponder/*.{h,m}'
   end
   s.subspec 'UIImage' do |ss|
       ss.source_files = 'CMUtils/Classes/UIImage/*.{h,m}'

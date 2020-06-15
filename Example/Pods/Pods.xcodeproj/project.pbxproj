@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00F97EDF57CAA27E250E1C908B7FB3DC /* NSString+SCExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B406273D34FB0CE9BEE012B34CC37D1F /* NSString+SCExt.m */; };
 		020E19C80A75B144D759BBF1AFB29356 /* Pods-CMUtils_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7287102BF23A341ACF515FDE5667FBB8 /* Pods-CMUtils_Example-dummy.m */; };
-		07E59E8657D8AD980602B60103AD7034 /* NSString+SCExt.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAEEB39442D2E51F3AB1191D8091490 /* NSString+SCExt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D814C5414F524CA298BFF965F2B1B1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0DD3201922910436F1349D9BA1B14077 /* NSString+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36B6EEE703A3334B717E181E75AA52 /* NSString+WYExt.m */; };
+		14E5DC46ACABF24B03EF3B6A62568564 /* WYConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB8C0EA146B76E517D997C6319D5DDE /* WYConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20DC8D70EC0851844031D58026708B3D /* UIFont+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D957FD2F1878F08F9C42CEAD29E371 /* UIFont+Tools.m */; };
+		25656AE04136A1579A9CD1624FA2F605 /* UIFont+Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = D04BE17AE37B1551CE31802338A5C1A3 /* UIFont+Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A25062FD0ECD30D5B67F3FB425FC203 /* Pods-CMUtils_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C301B0E278E51934ADF23DCC0D2AC44 /* Pods-CMUtils_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3CE8C3C51C6CA951482BF518986460E9 /* NSString+FilterString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3850EC4FF9F7F4A1C85AA0C703AC2291 /* NSString+FilterString.m */; };
-		3F55BF8A524147C3246D42182C123C43 /* UIResponder+RouterEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 867D5A13E12B5D2C4B7C4B85C5395C8A /* UIResponder+RouterEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40E89274C978E90C5DBF3F9EA7043D80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		548497FAC2B990C14A3D1BAC159DC2DD /* CMUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B56AFEAB1BE29F5FEBD154F5C69BF8B1 /* CMUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58F5A0548B039D665CA16584104562F1 /* NSString+FilterString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F34DF4795938BA3E14DF8FB4B6F0A08 /* NSString+FilterString.m */; };
 		60177E33EB1FD957DD8D18649C01FB3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		66248A85B3931A5BEDF45E53EAC6B043 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 804D996BFB2FD471BD4FB14F6C3F3BF5 /* UIColor+Hex.m */; };
-		78959EA1DE134DDE4241BC10017E70B2 /* XZConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = C52AD929CF9DD7E01BB0F68A559988B7 /* XZConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		612EDCDA0C1A21EFBC8ECEFEF92520C1 /* NSString+WYExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A3A61E14BB770520EF47E4DEF8D57B /* NSString+WYExt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ABF7819E41CDB13C01B69D4EB930EBA /* NSString+Emoji.h in Headers */ = {isa = PBXBuildFile; fileRef = 904DD2146708AF6082D40B2D636751C0 /* NSString+Emoji.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81972EB0BDD7748FE002C3056A54CD1E /* Pods-CMUtils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F5157C0A5AF2211342C5E4A5C5DDE2 /* Pods-CMUtils_Tests-dummy.m */; };
-		8C0CA89619100BE95D33350E9BA8FC71 /* CMUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C0F992387800DAEAE712DC3D6E58F4 /* CMUtils-dummy.m */; };
-		8C6E0C3F3FCA799C70EF222B0326C81C /* UIColor+Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 7797D5DB6C4A9B9C68E3A68D7F8244E1 /* UIColor+Hex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5F490425E0B49E5435D68DBDCE70D34 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6055D6B56BF8D67F78DD72C9F2A14D /* NSString+Emoji.m */; };
-		AD050FCF6E6BBAF3A941EFD7A9AF7297 /* UIImage+bundle.h in Headers */ = {isa = PBXBuildFile; fileRef = CA6159DC8AF77FD876AD51582F24D61B /* UIImage+bundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A12B4C7F9D11D8CAB785FF0AF749350C /* NSString+FilterString.h in Headers */ = {isa = PBXBuildFile; fileRef = FF3ECECAA978BA546DD20C0F9025CF20 /* NSString+FilterString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1989C4048B6A389F0DFC98282DBF069 /* Pods-CMUtils_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 782A064E6B8A70D1AAC18FA2D4FD66E5 /* Pods-CMUtils_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF65F10998A69D61A5DB8BF1C4C68F37 /* NSString+Emoji.h in Headers */ = {isa = PBXBuildFile; fileRef = 4578370CB25877C1B0550D4E26A41BB3 /* NSString+Emoji.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD0375D7DAD24356E420C396A33DD017 /* UIResponder+RouterEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BF263FA4630FB1FA6BA115C815BE20 /* UIResponder+RouterEvent.m */; };
-		F4F400D7A58DA0AC43591E47259E55C8 /* NSString+FilterString.h in Headers */ = {isa = PBXBuildFile; fileRef = 59B46D8B18D9986A30D1EC74BCBDF3CF /* NSString+FilterString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA4922558FA9E99A9CF0048DC91D74C6 /* UIFont+XZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BC51E24075CC84878876E626ECF973A7 /* UIFont+XZTool.m */; };
-		FBF7A4AFA2959F46D484A5EA88716613 /* UIImage+bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6697C5195D4D80F7CC83DE8D97A8DE62 /* UIImage+bundle.m */; };
-		FF052F7B2C49E9EC397082A67892F455 /* UIFont+XZTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 34DE4F08CDC3890FC4AE9664C032421C /* UIFont+XZTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B78329958ED4113D6AB264213B2C607F /* UIResponder+RouterEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 948F129B3CF88BB372D9641047379E3A /* UIResponder+RouterEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCF3844CF09EE297FA3B868BDB4E2254 /* UIColor+Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = 86F6B6F6BEC0584AFEE861909F167A46 /* UIColor+Hex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF00BF87D68F0BA58D9F78117AC85012 /* UIImage+bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 467B34A7C8A0791C24B6AA5D6BF5B806 /* UIImage+bundle.m */; };
+		C7E111EA45510575460EA8B8A9E39084 /* CMUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DE1AA6C7E1A421FD8E9CB3F5D6D58E /* CMUtils-dummy.m */; };
+		D24C61254ADD12324D8CB80EAC9ACCD7 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4394C34B3B3C7EC7266A831011B970 /* UIColor+Hex.m */; };
+		D7D326ED3C1F514D642E308F67B92812 /* UIImage+bundle.h in Headers */ = {isa = PBXBuildFile; fileRef = B65DB548A1F006F6632CF3FF0FE53CEB /* UIImage+bundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6AB2469F93FC92DBE26BA1B5022BBAA /* CMUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB27564D5C8B64516E2C8979BF05B46D /* CMUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F388B962AA1FA601B479914B4541089B /* UIResponder+RouterEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 344A5923DA0A360C14B65A45F4E5FA7E /* UIResponder+RouterEvent.m */; };
+		F5FAE272A94AAC3CE573B974ED3C07E9 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A4E8691CD4C3C1D104FD418BE3EAAE /* NSString+Emoji.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,52 +51,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AAE6741C13144C6358125B58563A959 /* CMUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CMUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		00A3A61E14BB770520EF47E4DEF8D57B /* NSString+WYExt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+WYExt.h"; path = "CMUtils/Classes/NSString/NSString+WYExt.h"; sourceTree = "<group>"; };
+		14D957FD2F1878F08F9C42CEAD29E371 /* UIFont+Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+Tools.m"; path = "CMUtils/Classes/UIFont/UIFont+Tools.m"; sourceTree = "<group>"; };
+		1D9839A4FC6D8E38DCD5B9FD92AF80A5 /* CMUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CMUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1E74D771D374A183F7ED1B2B33061371 /* CMUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMUtils-prefix.pch"; sourceTree = "<group>"; };
 		31444F2B11AA474C598310AFED4BCD6F /* Pods-CMUtils_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CMUtils_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32F5157C0A5AF2211342C5E4A5C5DDE2 /* Pods-CMUtils_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CMUtils_Tests-dummy.m"; sourceTree = "<group>"; };
-		34DE4F08CDC3890FC4AE9664C032421C /* UIFont+XZTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+XZTool.h"; path = "CMUtils/Classes/UIFont/UIFont+XZTool.h"; sourceTree = "<group>"; };
-		3850EC4FF9F7F4A1C85AA0C703AC2291 /* NSString+FilterString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+FilterString.m"; path = "CMUtils/Classes/NSString/NSString+FilterString.m"; sourceTree = "<group>"; };
-		40D4427895F20C343964C133CC646FEA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		4578370CB25877C1B0550D4E26A41BB3 /* NSString+Emoji.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Emoji.h"; path = "CMUtils/Classes/NSString/NSString+Emoji.h"; sourceTree = "<group>"; };
-		4B6055D6B56BF8D67F78DD72C9F2A14D /* NSString+Emoji.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Emoji.m"; path = "CMUtils/Classes/NSString/NSString+Emoji.m"; sourceTree = "<group>"; };
+		344A5923DA0A360C14B65A45F4E5FA7E /* UIResponder+RouterEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+RouterEvent.m"; path = "CMUtils/Classes/UIResponder/UIResponder+RouterEvent.m"; sourceTree = "<group>"; };
+		3F34DF4795938BA3E14DF8FB4B6F0A08 /* NSString+FilterString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+FilterString.m"; path = "CMUtils/Classes/NSString/NSString+FilterString.m"; sourceTree = "<group>"; };
+		467B34A7C8A0791C24B6AA5D6BF5B806 /* UIImage+bundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+bundle.m"; path = "CMUtils/Classes/UIImage/UIImage+bundle.m"; sourceTree = "<group>"; };
+		47369C6AE5D5C994570A0782F823EDF8 /* CMUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CMUtils-Info.plist"; sourceTree = "<group>"; };
 		51573C1E02F51D77FE73F56339121406 /* Pods-CMUtils_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMUtils_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		59B46D8B18D9986A30D1EC74BCBDF3CF /* NSString+FilterString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+FilterString.h"; path = "CMUtils/Classes/NSString/NSString+FilterString.h"; sourceTree = "<group>"; };
 		60E66656729D76D804B3D087BE070D25 /* Pods-CMUtils_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CMUtils_Example-frameworks.sh"; sourceTree = "<group>"; };
 		65CC3D46BD8E521F1BB306D81697F1F4 /* Pods-CMUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6697C5195D4D80F7CC83DE8D97A8DE62 /* UIImage+bundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+bundle.m"; path = "CMUtils/Classes/UIImage/UIImage+bundle.m"; sourceTree = "<group>"; };
-		68791D261717346CAC158058E4C61F27 /* CMUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CMUtils-Info.plist"; sourceTree = "<group>"; };
 		6A32D48726705F32C8C5A17A18C261FE /* Pods_CMUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CMUtils_Tests.framework; path = "Pods-CMUtils_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B90990D7456E6EFB35DE27084996B58 /* CMUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMUtils.debug.xcconfig; sourceTree = "<group>"; };
 		6C301B0E278E51934ADF23DCC0D2AC44 /* Pods-CMUtils_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CMUtils_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6CB8C0EA146B76E517D997C6319D5DDE /* WYConstant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WYConstant.h; path = CMUtils/Classes/WYConstant.h; sourceTree = "<group>"; };
 		6EE0E4DFB054C4BC031A774939D7B2FF /* Pods-CMUtils_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMUtils_Example-Info.plist"; sourceTree = "<group>"; };
 		7287102BF23A341ACF515FDE5667FBB8 /* Pods-CMUtils_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CMUtils_Example-dummy.m"; sourceTree = "<group>"; };
-		7797D5DB6C4A9B9C68E3A68D7F8244E1 /* UIColor+Hex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "CMUtils/Classes/UIColor/UIColor+Hex.h"; sourceTree = "<group>"; };
 		782A064E6B8A70D1AAC18FA2D4FD66E5 /* Pods-CMUtils_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CMUtils_Example-umbrella.h"; sourceTree = "<group>"; };
 		7B30992601A870F2616878A20FFB7955 /* Pods-CMUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
-		804D996BFB2FD471BD4FB14F6C3F3BF5 /* UIColor+Hex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "CMUtils/Classes/UIColor/UIColor+Hex.m"; sourceTree = "<group>"; };
-		867D5A13E12B5D2C4B7C4B85C5395C8A /* UIResponder+RouterEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+RouterEvent.h"; path = "CMUtils/Classes/RouterEvent/UIResponder+RouterEvent.h"; sourceTree = "<group>"; };
+		86F6B6F6BEC0584AFEE861909F167A46 /* UIColor+Hex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "CMUtils/Classes/UIColor/UIColor+Hex.h"; sourceTree = "<group>"; };
 		88816C28B113C0F88F3D2F780F84BEFC /* Pods_CMUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CMUtils_Example.framework; path = "Pods-CMUtils_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		904DD2146708AF6082D40B2D636751C0 /* NSString+Emoji.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Emoji.h"; path = "CMUtils/Classes/NSString/NSString+Emoji.h"; sourceTree = "<group>"; };
+		948F129B3CF88BB372D9641047379E3A /* UIResponder+RouterEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+RouterEvent.h"; path = "CMUtils/Classes/UIResponder/UIResponder+RouterEvent.h"; sourceTree = "<group>"; };
 		95A37A91A46D0F125F83D4FD815724BD /* Pods-CMUtils_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CMUtils_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D4D354C068F596F4B6CF371370AEE99 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5C0F992387800DAEAE712DC3D6E58F4 /* CMUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CMUtils-dummy.m"; sourceTree = "<group>"; };
+		A5F9F1F8E84E4922BCFC71AA126A9A3F /* CMUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMUtils.release.xcconfig; sourceTree = "<group>"; };
 		A6D083E0B68BBE8D3366A0498B3E576F /* Pods-CMUtils_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMUtils_Tests-Info.plist"; sourceTree = "<group>"; };
 		A7319667B9EA8426BC840073E8C7E9C2 /* Pods-CMUtils_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMUtils_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		ABAEEB39442D2E51F3AB1191D8091490 /* NSString+SCExt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SCExt.h"; path = "CMUtils/Classes/NSString/NSString+SCExt.h"; sourceTree = "<group>"; };
+		AC36B6EEE703A3334B717E181E75AA52 /* NSString+WYExt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+WYExt.m"; path = "CMUtils/Classes/NSString/NSString+WYExt.m"; sourceTree = "<group>"; };
 		B322FC36BB316D1DD94EAE23B01D9773 /* CMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CMUtils.framework; path = CMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B406273D34FB0CE9BEE012B34CC37D1F /* NSString+SCExt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SCExt.m"; path = "CMUtils/Classes/NSString/NSString+SCExt.m"; sourceTree = "<group>"; };
-		B56AFEAB1BE29F5FEBD154F5C69BF8B1 /* CMUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMUtils-umbrella.h"; sourceTree = "<group>"; };
+		B65DB548A1F006F6632CF3FF0FE53CEB /* UIImage+bundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+bundle.h"; path = "CMUtils/Classes/UIImage/UIImage+bundle.h"; sourceTree = "<group>"; };
 		BAE657DED877938BEB1F1C9ACCB7F08E /* Pods-CMUtils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CMUtils_Tests.modulemap"; sourceTree = "<group>"; };
-		BC51E24075CC84878876E626ECF973A7 /* UIFont+XZTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+XZTool.m"; path = "CMUtils/Classes/UIFont/UIFont+XZTool.m"; sourceTree = "<group>"; };
-		BF1D8E7FA135E1475A5CD287A6EE6F56 /* CMUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMUtils.debug.xcconfig; sourceTree = "<group>"; };
-		C2BF263FA4630FB1FA6BA115C815BE20 /* UIResponder+RouterEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+RouterEvent.m"; path = "CMUtils/Classes/RouterEvent/UIResponder+RouterEvent.m"; sourceTree = "<group>"; };
-		C52AD929CF9DD7E01BB0F68A559988B7 /* XZConstant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XZConstant.h; path = CMUtils/Classes/XZConstant.h; sourceTree = "<group>"; };
-		CA6159DC8AF77FD876AD51582F24D61B /* UIImage+bundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+bundle.h"; path = "CMUtils/Classes/UIImage/UIImage+bundle.h"; sourceTree = "<group>"; };
 		D0157EACAFB8E84E67DA61BD2A8C431F /* Pods-CMUtils_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMUtils_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D0A4C70FBB71D32CC8F5F098D02CBF43 /* CMUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMUtils.release.xcconfig; sourceTree = "<group>"; };
-		E15C7C10C95E4CE11753037F6AFA8830 /* CMUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMUtils-prefix.pch"; sourceTree = "<group>"; };
+		D04BE17AE37B1551CE31802338A5C1A3 /* UIFont+Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+Tools.h"; path = "CMUtils/Classes/UIFont/UIFont+Tools.h"; sourceTree = "<group>"; };
+		D1FB9AF3E4B55D7918501FA36CB0A011 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D9A4E8691CD4C3C1D104FD418BE3EAAE /* NSString+Emoji.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Emoji.m"; path = "CMUtils/Classes/NSString/NSString+Emoji.m"; sourceTree = "<group>"; };
+		DA1034AFD5821F48811FB164F0F5A4EF /* CMUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CMUtils.modulemap; sourceTree = "<group>"; };
 		EB82B784D0E01E80CE56C1C65FC7F86F /* Pods-CMUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		ECB4F706336A8A4C76D9530EF47BCCFC /* CMUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CMUtils.modulemap; sourceTree = "<group>"; };
-		FDC10EDB61A8BFD327F92A6A48AEE5B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EE4394C34B3B3C7EC7266A831011B970 /* UIColor+Hex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "CMUtils/Classes/UIColor/UIColor+Hex.m"; sourceTree = "<group>"; };
+		F5DE1AA6C7E1A421FD8E9CB3F5D6D58E /* CMUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CMUtils-dummy.m"; sourceTree = "<group>"; };
+		FB27564D5C8B64516E2C8979BF05B46D /* CMUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMUtils-umbrella.h"; sourceTree = "<group>"; };
+		FF3ECECAA978BA546DD20C0F9025CF20 /* NSString+FilterString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+FilterString.h"; path = "CMUtils/Classes/NSString/NSString+FilterString.h"; sourceTree = "<group>"; };
 		FFFE2AB4D4C159263B6854C00894E7FF /* Pods-CMUtils_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CMUtils_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +128,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01548EE1193B17073568D94EA81FB60A /* CMUtils */ = {
+			isa = PBXGroup;
+			children = (
+				6CB8C0EA146B76E517D997C6319D5DDE /* WYConstant.h */,
+				9513E820485BCAA7F649F22277A6A9ED /* NSString */,
+				AAE0C6EAE39AFB20CE6DDBB4001B2EFB /* Pod */,
+				C393961576D82FCA52BB6815F82E2EA0 /* Support Files */,
+				91F14294CBF40F15A4DB454FC1E8E6F1 /* UIColor */,
+				C5B74C8487D36C04740E124F1EA3B699 /* UIFont */,
+				E60CB2D70705148FF5F35DDFB3D44C78 /* UIImage */,
+				A766EA8E497A910A5F10F89B85FD02C2 /* UIResponder */,
+			);
+			name = CMUtils;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		3949441392C1567B4FE4D8636F07D053 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,55 +173,50 @@
 		55F0D46A125208A1BC5FC4C8DE1A3461 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D534EA1ACECDCC7B2F6506A068528D23 /* CMUtils */,
+				01548EE1193B17073568D94EA81FB60A /* CMUtils */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		56414647CF33A6753197D6748E0ED10D /* RouterEvent */ = {
+		91F14294CBF40F15A4DB454FC1E8E6F1 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				867D5A13E12B5D2C4B7C4B85C5395C8A /* UIResponder+RouterEvent.h */,
-				C2BF263FA4630FB1FA6BA115C815BE20 /* UIResponder+RouterEvent.m */,
+				86F6B6F6BEC0584AFEE861909F167A46 /* UIColor+Hex.h */,
+				EE4394C34B3B3C7EC7266A831011B970 /* UIColor+Hex.m */,
 			);
-			name = RouterEvent;
+			name = UIColor;
 			sourceTree = "<group>";
 		};
-		5B053907678F15A406025EB34E85A298 /* UIImage */ = {
+		9513E820485BCAA7F649F22277A6A9ED /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				CA6159DC8AF77FD876AD51582F24D61B /* UIImage+bundle.h */,
-				6697C5195D4D80F7CC83DE8D97A8DE62 /* UIImage+bundle.m */,
-			);
-			name = UIImage;
-			sourceTree = "<group>";
-		};
-		89731D3AB2CB0EB1B541E39B4F38A332 /* NSString */ = {
-			isa = PBXGroup;
-			children = (
-				4578370CB25877C1B0550D4E26A41BB3 /* NSString+Emoji.h */,
-				4B6055D6B56BF8D67F78DD72C9F2A14D /* NSString+Emoji.m */,
-				59B46D8B18D9986A30D1EC74BCBDF3CF /* NSString+FilterString.h */,
-				3850EC4FF9F7F4A1C85AA0C703AC2291 /* NSString+FilterString.m */,
-				ABAEEB39442D2E51F3AB1191D8091490 /* NSString+SCExt.h */,
-				B406273D34FB0CE9BEE012B34CC37D1F /* NSString+SCExt.m */,
+				904DD2146708AF6082D40B2D636751C0 /* NSString+Emoji.h */,
+				D9A4E8691CD4C3C1D104FD418BE3EAAE /* NSString+Emoji.m */,
+				FF3ECECAA978BA546DD20C0F9025CF20 /* NSString+FilterString.h */,
+				3F34DF4795938BA3E14DF8FB4B6F0A08 /* NSString+FilterString.m */,
+				00A3A61E14BB770520EF47E4DEF8D57B /* NSString+WYExt.h */,
+				AC36B6EEE703A3334B717E181E75AA52 /* NSString+WYExt.m */,
 			);
 			name = NSString;
 			sourceTree = "<group>";
 		};
-		8E34D3F2E200F7EFFA854D6074A87075 /* Support Files */ = {
+		A766EA8E497A910A5F10F89B85FD02C2 /* UIResponder */ = {
 			isa = PBXGroup;
 			children = (
-				ECB4F706336A8A4C76D9530EF47BCCFC /* CMUtils.modulemap */,
-				A5C0F992387800DAEAE712DC3D6E58F4 /* CMUtils-dummy.m */,
-				68791D261717346CAC158058E4C61F27 /* CMUtils-Info.plist */,
-				E15C7C10C95E4CE11753037F6AFA8830 /* CMUtils-prefix.pch */,
-				B56AFEAB1BE29F5FEBD154F5C69BF8B1 /* CMUtils-umbrella.h */,
-				BF1D8E7FA135E1475A5CD287A6EE6F56 /* CMUtils.debug.xcconfig */,
-				D0A4C70FBB71D32CC8F5F098D02CBF43 /* CMUtils.release.xcconfig */,
+				948F129B3CF88BB372D9641047379E3A /* UIResponder+RouterEvent.h */,
+				344A5923DA0A360C14B65A45F4E5FA7E /* UIResponder+RouterEvent.m */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CMUtils";
+			name = UIResponder;
+			sourceTree = "<group>";
+		};
+		AAE0C6EAE39AFB20CE6DDBB4001B2EFB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1D9839A4FC6D8E38DCD5B9FD92AF80A5 /* CMUtils.podspec */,
+				D1FB9AF3E4B55D7918501FA36CB0A011 /* LICENSE */,
+				9D4D354C068F596F4B6CF371370AEE99 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		AF79868AB03AC25F6CA55648297BCF50 /* Targets Support Files */ = {
@@ -215,25 +226,6 @@
 				4AAB66D83845C7162A481CC4FF8989F8 /* Pods-CMUtils_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B0A8A756B2829A6C2AD25F81CDA8ACFB /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				7797D5DB6C4A9B9C68E3A68D7F8244E1 /* UIColor+Hex.h */,
-				804D996BFB2FD471BD4FB14F6C3F3BF5 /* UIColor+Hex.m */,
-			);
-			name = UIColor;
-			sourceTree = "<group>";
-		};
-		B270FAC68A701E8438EABB23E23AC6BA /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				0AAE6741C13144C6358125B58563A959 /* CMUtils.podspec */,
-				FDC10EDB61A8BFD327F92A6A48AEE5B9 /* LICENSE */,
-				40D4427895F20C343964C133CC646FEA /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		BFD56D0D443212EABA3A2B6123E00B83 /* Pods-CMUtils_Example */ = {
@@ -261,11 +253,26 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C1698C6B5AA3695113763494871C6046 /* UIFont */ = {
+		C393961576D82FCA52BB6815F82E2EA0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				34DE4F08CDC3890FC4AE9664C032421C /* UIFont+XZTool.h */,
-				BC51E24075CC84878876E626ECF973A7 /* UIFont+XZTool.m */,
+				DA1034AFD5821F48811FB164F0F5A4EF /* CMUtils.modulemap */,
+				F5DE1AA6C7E1A421FD8E9CB3F5D6D58E /* CMUtils-dummy.m */,
+				47369C6AE5D5C994570A0782F823EDF8 /* CMUtils-Info.plist */,
+				1E74D771D374A183F7ED1B2B33061371 /* CMUtils-prefix.pch */,
+				FB27564D5C8B64516E2C8979BF05B46D /* CMUtils-umbrella.h */,
+				6B90990D7456E6EFB35DE27084996B58 /* CMUtils.debug.xcconfig */,
+				A5F9F1F8E84E4922BCFC71AA126A9A3F /* CMUtils.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CMUtils";
+			sourceTree = "<group>";
+		};
+		C5B74C8487D36C04740E124F1EA3B699 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				D04BE17AE37B1551CE31802338A5C1A3 /* UIFont+Tools.h */,
+				14D957FD2F1878F08F9C42CEAD29E371 /* UIFont+Tools.m */,
 			);
 			name = UIFont;
 			sourceTree = "<group>";
@@ -289,20 +296,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D534EA1ACECDCC7B2F6506A068528D23 /* CMUtils */ = {
+		E60CB2D70705148FF5F35DDFB3D44C78 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
-				C52AD929CF9DD7E01BB0F68A559988B7 /* XZConstant.h */,
-				89731D3AB2CB0EB1B541E39B4F38A332 /* NSString */,
-				B270FAC68A701E8438EABB23E23AC6BA /* Pod */,
-				56414647CF33A6753197D6748E0ED10D /* RouterEvent */,
-				8E34D3F2E200F7EFFA854D6074A87075 /* Support Files */,
-				B0A8A756B2829A6C2AD25F81CDA8ACFB /* UIColor */,
-				C1698C6B5AA3695113763494871C6046 /* UIFont */,
-				5B053907678F15A406025EB34E85A298 /* UIImage */,
+				B65DB548A1F006F6632CF3FF0FE53CEB /* UIImage+bundle.h */,
+				467B34A7C8A0791C24B6AA5D6BF5B806 /* UIImage+bundle.m */,
 			);
-			name = CMUtils;
-			path = ../..;
+			name = UIImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,27 +316,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A92DFD8E6B395E353CA88EC8F572DF9A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				548497FAC2B990C14A3D1BAC159DC2DD /* CMUtils-umbrella.h in Headers */,
-				CF65F10998A69D61A5DB8BF1C4C68F37 /* NSString+Emoji.h in Headers */,
-				F4F400D7A58DA0AC43591E47259E55C8 /* NSString+FilterString.h in Headers */,
-				07E59E8657D8AD980602B60103AD7034 /* NSString+SCExt.h in Headers */,
-				8C6E0C3F3FCA799C70EF222B0326C81C /* UIColor+Hex.h in Headers */,
-				FF052F7B2C49E9EC397082A67892F455 /* UIFont+XZTool.h in Headers */,
-				AD050FCF6E6BBAF3A941EFD7A9AF7297 /* UIImage+bundle.h in Headers */,
-				3F55BF8A524147C3246D42182C123C43 /* UIResponder+RouterEvent.h in Headers */,
-				78959EA1DE134DDE4241BC10017E70B2 /* XZConstant.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F541B2A1F7693026E8A2E0664E70AA89 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B1989C4048B6A389F0DFC98282DBF069 /* Pods-CMUtils_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5C6900AA4F862AF8E7DB5AC0292441 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6AB2469F93FC92DBE26BA1B5022BBAA /* CMUtils-umbrella.h in Headers */,
+				6ABF7819E41CDB13C01B69D4EB930EBA /* NSString+Emoji.h in Headers */,
+				A12B4C7F9D11D8CAB785FF0AF749350C /* NSString+FilterString.h in Headers */,
+				612EDCDA0C1A21EFBC8ECEFEF92520C1 /* NSString+WYExt.h in Headers */,
+				BCF3844CF09EE297FA3B868BDB4E2254 /* UIColor+Hex.h in Headers */,
+				25656AE04136A1579A9CD1624FA2F605 /* UIFont+Tools.h in Headers */,
+				D7D326ED3C1F514D642E308F67B92812 /* UIImage+bundle.h in Headers */,
+				B78329958ED4113D6AB264213B2C607F /* UIResponder+RouterEvent.h in Headers */,
+				14E5DC46ACABF24B03EF3B6A62568564 /* WYConstant.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +347,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 502B9812E3163396664974973125E5AA /* Build configuration list for PBXNativeTarget "CMUtils" */;
 			buildPhases = (
-				A92DFD8E6B395E353CA88EC8F572DF9A /* Headers */,
-				19F924E73B453B40B45B89242D38364B /* Sources */,
+				FE5C6900AA4F862AF8E7DB5AC0292441 /* Headers */,
+				B7B01EFEAB21DEE4DE18F74A5EC7A1F0 /* Sources */,
 				F7DE514D5DC6C11057778C331C922491 /* Frameworks */,
 				5A2FC338A2C83E6FE1D8D089C1E62201 /* Resources */,
 			);
@@ -453,26 +453,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		19F924E73B453B40B45B89242D38364B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C0CA89619100BE95D33350E9BA8FC71 /* CMUtils-dummy.m in Sources */,
-				A5F490425E0B49E5435D68DBDCE70D34 /* NSString+Emoji.m in Sources */,
-				3CE8C3C51C6CA951482BF518986460E9 /* NSString+FilterString.m in Sources */,
-				00F97EDF57CAA27E250E1C908B7FB3DC /* NSString+SCExt.m in Sources */,
-				66248A85B3931A5BEDF45E53EAC6B043 /* UIColor+Hex.m in Sources */,
-				FA4922558FA9E99A9CF0048DC91D74C6 /* UIFont+XZTool.m in Sources */,
-				FBF7A4AFA2959F46D484A5EA88716613 /* UIImage+bundle.m in Sources */,
-				DD0375D7DAD24356E420C396A33DD017 /* UIResponder+RouterEvent.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B3370214DDC5F24AB18E96C08C38CB6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				020E19C80A75B144D759BBF1AFB29356 /* Pods-CMUtils_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B01EFEAB21DEE4DE18F74A5EC7A1F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E111EA45510575460EA8B8A9E39084 /* CMUtils-dummy.m in Sources */,
+				F5FAE272A94AAC3CE573B974ED3C07E9 /* NSString+Emoji.m in Sources */,
+				58F5A0548B039D665CA16584104562F1 /* NSString+FilterString.m in Sources */,
+				0DD3201922910436F1349D9BA1B14077 /* NSString+WYExt.m in Sources */,
+				D24C61254ADD12324D8CB80EAC9ACCD7 /* UIColor+Hex.m in Sources */,
+				20DC8D70EC0851844031D58026708B3D /* UIFont+Tools.m in Sources */,
+				BF00BF87D68F0BA58D9F78117AC85012 /* UIImage+bundle.m in Sources */,
+				F388B962AA1FA601B479914B4541089B /* UIResponder+RouterEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,7 +728,7 @@
 		};
 		B516C40C0722A3967D189CA6F9B55124 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF1D8E7FA135E1475A5CD287A6EE6F56 /* CMUtils.debug.xcconfig */;
+			baseConfigurationReference = 6B90990D7456E6EFB35DE27084996B58 /* CMUtils.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -759,7 +759,7 @@
 		};
 		BB7F7959E2CFCF6ACB789ECBBC47B895 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0A4C70FBB71D32CC8F5F098D02CBF43 /* CMUtils.release.xcconfig */;
+			baseConfigurationReference = A5F9F1F8E84E4922BCFC71AA126A9A3F /* CMUtils.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

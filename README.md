@@ -12,28 +12,23 @@ source 'https://github.com/CocoaPods/Specs.git'
 * 安装
 
 ```ruby
-pod 'SCUtils'
+pod 'CMUtils'
 ```
 
 * 使用subspec
 
 ```
-pod 'SCUtils/NSString'
+pod 'CMUtils/NSString'
 ```
 
 ### Usage
 ```objc
-#import "SCUtils.h"
+#import "WYConstant.h"
 ```
 
 ### 常见功能
 
 - 常量定义
-- 时间格式转换
-- 设备信息获取
-- JSON 数据转换
-- 异常堆栈获取
-- 科学计数四则运算
 - 字符串的常见处理
 - 响应事件拦截
 

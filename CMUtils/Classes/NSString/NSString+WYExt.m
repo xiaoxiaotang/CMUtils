@@ -1,22 +1,21 @@
 //
-//  NSString+SCExt.m
-//  SaicUtilsDemo
+//  NSString+WYExt.m
+//  CMUtils
 //
-//  Created by saic on 2018/9/6.
-//  Copyright © 2018年 saic. All rights reserved.
+//  Created by 小站 on 2020/6/15.
 //
 
-#import "NSString+SCExt.h"
+#import "NSString+WYExt.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
 
-@implementation NSString (SCExt)
+@implementation NSString (WYExt)
 
 #pragma mark - Hash
 ///=============================================================================
 /// @name Hash
 ///=============================================================================
-- (NSString *)sc_md5Mod32 {
+- (NSString *)wy_md5Mod32 {
     const char *cStr = [self UTF8String];
     unsigned char result[32];
     CC_MD5( cStr, (unsigned int)strlen(cStr), result );
@@ -27,7 +26,7 @@
              result[12],result[13],result[14],result[15]] lowercaseString];
 }
 
-- (NSString *)sc_base64String {
+- (NSString *)wy_base64String {
     NSData *data = [NSData dataWithBytes:[self UTF8String] length:[self lengthOfBytesUsingEncoding:NSUTF8StringEncoding]];
     NSUInteger length = [data length];
     NSMutableData *mutableData = [NSMutableData dataWithLength:((length + 2) / 3) * 4];
@@ -57,23 +56,23 @@
     return retString;
 }
 
-- (NSString*)sc_SHA1 {
+- (NSString*)wy_SHA1 {
     unsigned int outputLength = CC_SHA1_DIGEST_LENGTH;
     unsigned char output[outputLength];
 
-    CC_SHA1(self.UTF8String, [self sc_UTF8Length], output);
-    return [self sc_toHexString:output length:outputLength];;
+    CC_SHA1(self.UTF8String, [self wy_UTF8Length], output);
+    return [self wy_toHexString:output length:outputLength];;
 }
 
-- (NSString*)sc_SHA256 {
+- (NSString*)wy_SHA256 {
     unsigned int outputLength = CC_SHA256_DIGEST_LENGTH;
     unsigned char output[outputLength];
 
-    CC_SHA256(self.UTF8String, [self sc_UTF8Length], output);
-    return [self sc_toHexString:output length:outputLength];;
+    CC_SHA256(self.UTF8String, [self wy_UTF8Length], output);
+    return [self wy_toHexString:output length:outputLength];;
 }
 
-+ (NSString *)sc_encryptUseDES:(NSString *)clearText key:(NSString *)key {
++ (NSString *)wy_encryptUseDES:(NSString *)clearText key:(NSString *)key {
     NSString *ciphertext = nil;
     NSData *textData = [clearText dataUsingEncoding:NSUTF8StringEncoding];
     NSUInteger dataLength = [textData length];
@@ -103,7 +102,7 @@
 }
 
 //textData
-+ (NSString *)sc_decryptUseDESWithTextData:(NSData *)textData key:(NSString *)key {
++ (NSString *)wy_decryptUseDESWithTextData:(NSData *)textData key:(NSString *)key {
     NSString *cleartext = nil;
     //    [self parseHexToByteArray:plainText];
     NSUInteger dataLength = [textData length];
@@ -132,7 +131,7 @@
 
 // 16 -> 10
 - (NSString *)formatFromHexString {
-    if (![self sc_notEmpty]) {
+    if (![self wy_notEmpty]) {
         return @"";
     }
     NSScanner *scanner = [NSScanner scannerWithString:self];
@@ -144,18 +143,18 @@
 
 // 10 -> 16
 - (NSString *)formatToHexString {
-    if (![self sc_notEmpty]) {
+    if (![self wy_notEmpty]) {
         return @"";
     }
     NSNumber *longNumber = [NSNumber numberWithLongLong:llabs([self longLongValue])];
     return [NSString stringWithFormat:@"%llx", [longNumber unsignedLongLongValue]];
 }
 
-- (unsigned int)sc_UTF8Length {
+- (unsigned int)wy_UTF8Length {
     return (unsigned int) [self lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
 }
 
-- (NSString*)sc_toHexString:(unsigned char*) data length: (unsigned int) length {
+- (NSString*)wy_toHexString:(unsigned char*) data length: (unsigned int) length {
     NSMutableString* hash = [NSMutableString stringWithCapacity:length * 2];
     for (unsigned int i = 0; i < length; i++) {
         [hash appendFormat:@"%02x", data[i]];
@@ -169,7 +168,7 @@
 /// @name Verify
 ///=============================================================================
 
-- (BOOL)sc_notEmpty {
+- (BOOL)wy_notEmpty {
     if (!self || [self isKindOfClass:[NSNull class]]) {
         return NO;
     }
@@ -179,7 +178,7 @@
     return NO;
 }
 
-+ (BOOL)sc_notEmpty:(NSString *)string {
++ (BOOL)wy_notEmpty:(NSString *)string {
     if (!string) return NO;
     static NSSet *emptySet;
     static dispatch_once_t onceToken;
@@ -197,8 +196,8 @@
 ///=============================================================================
 
 // [a-zA-z]+://[^\s]* 或 ^http://([\w-]+\.)+[\w-]+(/[\w-./?%&=]*)?$
-- (BOOL)sc_isValidUrl {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isValidUrl {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *regex =@"[a-zA-z]+://[^\\s]*";
@@ -208,8 +207,8 @@
 // ^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$
 // 乘客端:^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|17(6|7|8)|18[0-9])\d{8}$
 // ^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|16(5|6|7|)|17(6|7|8)|18[0|1|2|3|5|6|7|8|9]|19[1|9])\d{8}$
-- (BOOL)sc_isValidPhoneNumber {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isValidPhoneNumber {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *match = @"^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\\d{8}$";
@@ -217,8 +216,8 @@
     return [predicate evaluateWithObject:self];
 }
 
-- (BOOL)sc_isValidTelNumber {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isValidTelNumber {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *match = @"^(\\(\\d{3,4}-)|\\d{3.4}-)?\\d{7,8}$";
@@ -226,8 +225,8 @@
     return [predicate evaluateWithObject:self];
 }
 // (^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)
-- (BOOL)sc_isValidIDCardNumber {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isValidIDCardNumber {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *match = @"(^\\d{15}$)|(^\\d{18}$)|(^\\d{17}(\\d|X|x)$)";
@@ -236,7 +235,7 @@
 }
 
 //精确的身份证号码有效性检测
-+ (BOOL)sc_accurateVerifyIDCardNumber:(NSString *)value {
++ (BOOL)wy_accurateVerifyIDCardNumber:(NSString *)value {
     value = [value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 
     int length =0;
@@ -338,7 +337,7 @@
  *  2，将奇位乘积的个十位全部相加，再加上所有偶数位上的数字
  *  3，将加法和加上校验位能被 10 整除。
  */
-- (BOOL)sc_bankCardluhmCheck {
+- (BOOL)wy_bankCardluhmCheck {
     NSString * lastNum = [[self substringFromIndex:(self.length-1)] copy];//取出最后一位
     NSString * forwardNum = [[self substringToIndex:(self.length -1)] copy];//前15或18位
 
@@ -395,9 +394,9 @@
     return (luhmTotal%10 ==0)?YES:NO;
 }
 
-- (BOOL)sc_isCarNumber {
+- (BOOL)wy_isCarNumber {
     //车牌号:湘K-DE829 香港车牌号码:粤Z-J499港
-    if (![self sc_notEmpty]) {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *carRegex = @"^[\u4e00-\u9fff]{1}[a-zA-Z]{1}[-][a-zA-Z_0-9]{4}[a-zA-Z_0-9_\u4e00-\u9fff]$";//其中\u4e00-\u9fa5表示unicode编码中汉字已编码部分，\u9fa5-\u9fff是保留部分，将来可能会添加
@@ -405,8 +404,8 @@
     return [predicate evaluateWithObject:self];
 }
 
-- (BOOL)sc_isValidPostalcode {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isValidPostalcode {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *postalRegex = @"^[0-8]\\d{5}(?!\\d)$";
@@ -414,8 +413,8 @@
     return [predicate evaluateWithObject:self];
 }
 
-- (BOOL)sc_isValidTaxNo {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isValidTaxNo {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *taxNoRegex = @"[0-9]\\d{13}([0-9]|X)$";
@@ -423,8 +422,8 @@
     return [predicate evaluateWithObject:self];
 }
 
-- (BOOL)sc_isIPAddress {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isIPAddress {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *regex = [NSString stringWithFormat:@"^(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})$"];
@@ -447,8 +446,8 @@
 
     return NO;
 }
-- (BOOL)sc_isMacAddress {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isMacAddress {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *macAddRegex = @"([A-Fa-f\\d]{2}:){5}[A-Fa-f\\d]{2}";
@@ -457,8 +456,8 @@
 
 }
 // ^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$
-- (BOOL)sc_isValidEmail {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isValidEmail {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *match = @"^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$";
@@ -466,16 +465,16 @@
     return [predicate evaluateWithObject:self];
 }
 // 密码(以字母开头，长度在6~18之间，只能包含字母、数字和下划线)：^[a-zA-Z]\w{5,17}$
-- (BOOL)sc_isValidPassword {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isValidPassword {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *match = @"^[a-zA-Z]\\w{5,17}$";
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", match];
     return [predicate evaluateWithObject:self];
 }
-- (BOOL)sc_isValidCode {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isValidCode {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *match = @"^\\d{6}$";
@@ -484,8 +483,8 @@
 }
 // [\ud83c\udc00-\ud83c\udfff]|[\ud83d\udc00-\ud83d\udfff]|[\u2600-\u27ff]
 /**
-- (BOOL)sc_isContainsEmoji {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isContainsEmoji {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *match = @"[\\ud83c\\udc00-\\ud83c\\udfff]|[\\ud83d\\udc00-\\ud83d\\udfff]|[\\u2600-\\u27ff]";
@@ -494,8 +493,8 @@
 }
  **/
 
-- (BOOL)sc_isContainsEmoji {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isContainsEmoji {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     __block BOOL returnValue = NO;
@@ -535,8 +534,8 @@
     return returnValue;
 }
 
-- (BOOL)sc_isPureChinese {
-    if (![self sc_notEmpty]) {
+- (BOOL)wy_isPureChinese {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *chineseRegex = @"^[\u4e00-\u9fa5]+$";
@@ -544,14 +543,14 @@
     return [predicate evaluateWithObject:self];
 }
 
-- (BOOL)sc_isValidWithMinLenth:(NSInteger)minLenth
+- (BOOL)wy_isValidWithMinLenth:(NSInteger)minLenth
                       maxLenth:(NSInteger)maxLenth
                 containChinese:(BOOL)containChinese
                  containDigtal:(BOOL)containDigtal
                  containLetter:(BOOL)containLetter
          containOtherCharacter:(NSString *)containOtherCharacter
            firstCannotBeDigtal:(BOOL)firstCannotBeDigtal {
-    if (![self sc_notEmpty]) {
+    if (![self wy_notEmpty]) {
         return NO;
     }
     NSString *hanzi = containChinese ? @"\u4e00-\u9fa5" : @"";
@@ -570,26 +569,26 @@
 /// @name NSNumber Compatible
 ///=============================================================================
 //判断字符串是否是整型
-- (BOOL)sc_isPureInt {
+- (BOOL)wy_isPureInt {
     NSScanner *scan = [NSScanner scannerWithString:self];
     int val;
     return[scan scanInt:&val] && [scan isAtEnd];
 }
 //判断是否为浮点形
-- (BOOL)sc_isPureFloat {
+- (BOOL)wy_isPureFloat {
     NSScanner *scan = [NSScanner scannerWithString:self];
     float val;
     return[scan scanFloat:&val] && [scan isAtEnd];
 }
 //判断是否为双精度类型
-- (BOOL)sc_isPureDouble {
+- (BOOL)wy_isPureDouble {
     NSScanner *scan = [NSScanner scannerWithString:self];
     double val;
     return[scan scanDouble:&val] && [scan isAtEnd];
 }
 
 //判断是否为纯数字
-- (BOOL)sc_isPureNumCharacters {
+- (BOOL)wy_isPureNumCharacters {
     NSString *string = [self stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
     if(string.length > 0){
         return NO;
@@ -601,9 +600,9 @@
 /// @name NSDate Compatible
 ///=============================================================================
 
-+ (NSDictionary *)sc_formatURLParamsWithURLString:(NSString *)urlString {
++ (NSDictionary *)wy_formatURLParamsWithURLString:(NSString *)urlString {
     NSMutableDictionary *mutableDict = [NSMutableDictionary dictionaryWithCapacity:0];
-    if ([urlString sc_isValidUrl]) {
+    if ([urlString wy_isValidUrl]) {
         // 处理特殊字符
         urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
         NSURLComponents *URLComponents = [NSURLComponents componentsWithString:urlString];
@@ -619,9 +618,9 @@
     }
     return [mutableDict copy];
 }
-+ (NSString *)sc_formatURL:(NSString *)sourceURL withParams:(NSDictionary *)paramsDict {
++ (NSString *)wy_formatURL:(NSString *)sourceURL withParams:(NSDictionary *)paramsDict {
     //guard
-    if(![sourceURL sc_isValidUrl] || nil == paramsDict){
+    if(![sourceURL wy_isValidUrl] || nil == paramsDict){
         return sourceURL;
     }
 
@@ -630,7 +629,7 @@
     NSString *relativePath = [URL.relativePath stringByReplacingOccurrencesOfString:@"//" withString:@"/"];
     sourceURL = [sourceURL stringByReplacingOccurrencesOfString:URL.relativePath withString:relativePath];
     //1,获取URL中的所有参数
-    NSDictionary *originParamsDict = [NSString sc_formatURLParamsWithURLString:sourceURL];
+    NSDictionary *originParamsDict = [NSString wy_formatURLParamsWithURLString:sourceURL];
     NSMutableDictionary *mutableParamsDict = [NSMutableDictionary dictionaryWithDictionary:originParamsDict];
 
     //2,追加传入的参数
@@ -652,32 +651,32 @@
 ///=============================================================================
 /// @name path
 ///=============================================================================
-+ (NSString *)sc_pathForDocuments{
++ (NSString *)wy_pathForDocuments{
     
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 }
 
-+ (NSString *)sc_pathForCaches{
++ (NSString *)wy_pathForCaches{
     
     return [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
 }
 
-+ (NSString *)sc_pathForMainBundle{
++ (NSString *)wy_pathForMainBundle{
     
     return [NSBundle mainBundle].bundlePath;
 }
 
-+ (NSString *)sc_pathForTemp{
++ (NSString *)wy_pathForTemp{
     
     return NSTemporaryDirectory();
 }
 
-+ (NSString *)sc_pathForPreferences{
++ (NSString *)wy_pathForPreferences{
     
     return [NSSearchPathForDirectoriesInDomains(NSPreferencePanesDirectory, NSUserDomainMask, YES) lastObject];
 }
 
-+ (NSString *)sc_pathForSystemFile:(NSSearchPathDirectory)directory{
++ (NSString *)wy_pathForSystemFile:(NSSearchPathDirectory)directory{
     
     return [NSSearchPathForDirectoriesInDomains(directory, NSUserDomainMask, YES) lastObject];
 }
@@ -686,13 +685,13 @@
 ///=============================================================================
 /// @name Font
 ///=============================================================================
-- (CGSize)sc_sizeWithFont:(UIFont *)font andMaxSize:(CGSize)maxSize{
+- (CGSize)wy_sizeWithFont:(UIFont *)font andMaxSize:(CGSize)maxSize{
     
     NSDictionary *arrts = @{NSFontAttributeName:font};
     return [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:arrts context:nil].size;
 }
 
-- (CGFloat)sc_heightWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width {
+- (CGFloat)wy_heightWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width {
     UIFont *textFont = font ? font : [UIFont systemFontOfSize:[UIFont systemFontSize]];
 
     CGSize textSize;
@@ -728,7 +727,7 @@
     return ceil(textSize.height);
 }
 
-- (CGFloat)sc_widthWithFont:(UIFont *)font constrainedToHeight:(CGFloat)height {
+- (CGFloat)wy_widthWithFont:(UIFont *)font constrainedToHeight:(CGFloat)height {
     UIFont *textFont = font ? font : [UIFont systemFontOfSize:[UIFont systemFontSize]];
 
     CGSize textSize;
@@ -768,7 +767,7 @@
 ///=============================================================================
 /// @name Other
 ///=============================================================================
-+ (NSString *)sc_imTime:(NSString *)timestamp{
++ (NSString *)wy_imTime:(NSString *)timestamp{
     
     if (!timestamp || timestamp.length == 0) return @" ";
     @try {
@@ -809,7 +808,7 @@
     }
 }
 
-+ (NSString *)sc_processingTime:(NSString *)time{
++ (NSString *)wy_processingTime:(NSString *)time{
     
     if (!time || time.length < 16) return @"时间格式错误";
     @try {
@@ -849,7 +848,7 @@
     }
 }
 
-- (NSString *)sc_reverseString {
+- (NSString *)wy_reverseString {
     NSMutableString *reverseString = [[NSMutableString alloc] init];
     NSInteger charIndex = [self length];
     while (charIndex > 0) {

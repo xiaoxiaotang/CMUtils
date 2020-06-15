@@ -1,14 +1,13 @@
 //
-//  UIFont+XZTool.m
-//  XZCourseModule_Example
+//  UIFont+Tools.m
+//  CMUtils
 //
-//  Created by Allen on 2019/11/15.
-//  Copyright © 2019 liguoxiang. All rights reserved.
+//  Created by 小站 on 2020/6/15.
 //
 
-#import "UIFont+XZTool.h"
+#import "UIFont+Tools.h"
 
-@implementation UIFont (XZTool)
+@implementation UIFont (Tools)
 
 + (UIFont *)regularFontSize:(CGFloat)size {
     
@@ -24,5 +23,4 @@
     
     return [UIFont fontWithName:@"PingFangSC-Medium" size:size];
 }
-
 @end
